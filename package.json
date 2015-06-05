@@ -3,8 +3,28 @@
 	"private": true,
 	"name": "vote-calculator",
 	"description": "A vote calculating application using Ranked Pairs system",
-	"repository": "https://github.com/ClarkZinzow/vote-calculator",
-	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/ClarkZinzow/vote-calculator.git"
+	},
+	"licenses": [
+    	{
+      		"type": "MIT",
+      		"url": "https://github.com/nodeapps/http-server/raw/master/LICENSE"
+    	}
+  	],
+	"keywords": [],
+	"main": "app.js",
+	"contributors": [
+		{
+			"name": "Clark Zinzow",
+			"email": "czinzow@wisc.edu"
+		},
+		{
+			"name": "James Lloyd",
+			"email": "james.jd.lloyd@gmail.com"
+		}
+	],
 	"devDependencies": {
 		"karma": "^0.12.35",
 		"protractor": "~2.1.0",
@@ -22,5 +42,8 @@
 		"update-webdriver": "webdriver-manager update",
 		"preprotractor": "npm run update-webdriver",
 		"protractor": "protractor test/protractor-conf.js"
+	},
+	"bugs": {
+		"url": "https://github.com/ClarkZinzow/vote-calculator/issues"
 	}
 }
